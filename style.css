@@ -1,30 +1,143 @@
-/* Default Light Theme */
+/* ── RESET ── */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ── BASE ── */
 body {
-	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
-	color: #333;
-	margin: 0;
-	padding: 20px;
+   font-family: Arial, sans-serif;
+   background-color: #1e1e2e;
+   color: #e0e0e0;
 }
 
+/* ── HEADER / BANNER ── */
 header {
-	text-align: center;
-	margin-bottom: 30px;
+   background-image: url('Cat BG.png');
+   background-size: cover;
+   background-position: center top;
+   height: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   position: relative;
 }
 
-#profile-img {
-	width: 150px;
-	border-radius: 50%;
+header::before {
+   content: '';
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%; height: 100%;
+   background-color: rgba(0, 0, 0, 0.35);
 }
 
-button {
-	padding: 10px 20px;
-	margin-top: 10px;
-	cursor: pointer;
+.header-content {
+   position: relative;
+   z-index: 1;
 }
 
-/* Dark Theme */
-body.dark {
-	background-color: #121212;
-	color: #f5f5f5;
+.header-content h1 {
+   font-size: 1.8rem;
+   color: #ffffff;
+   margin-bottom: 6px;
+}
+
+.header-content p {
+   font-size: 0.95rem;
+   color: #cccccc;
+   margin-bottom: 14px;
+   letter-spacing: 1px;
+}
+
+/* ── THEME TOGGLE BUTTON ── */
+#theme-toggle {
+   padding: 8px 20px;
+   background-color: transparent;
+   color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 4px;
+   font-size: 0.85rem;
+   cursor: pointer;
+}
+
+#theme-toggle:hover {
+   background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── MAIN CONTAINER ── */
+.container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 30px 20px;
+}
+
+/* ── SECTIONS ── */
+section {
+   border-bottom: 1px solid #3a3a5c;
+   padding-bottom: 25px;
+   margin-bottom: 25px;
+}
+
+section:last-child {
+   border-bottom: none;
+}
+
+section h2 {
+   font-size: 1.1rem;
+   color: #5b8dee;
+   margin-bottom: 14px;
+}
+
+/* ── LISTS ── */
+ul {
+   list-style: disc;
+   padding-left: 20px;
+}
+
+ul li {
+   margin-bottom: 10px;
+   font-size: 0.92rem;
+   line-height: 1.5;
+   color: #cccccc;
+}
+
+/* ── LINK BUTTONS ── */
+.link-btn {
+   padding: 10px 22px;
+   background-color: #3a57c7;
+   color: #ffffff;
+   border: none;
+   border-radius: 6px;
+   font-size: 0.9rem;
+   cursor: pointer;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+.link-btn:hover {
+   background-color: #2e46a8;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* ── LIGHT THEME ── */
+body.light {
+   background-color: #f5f5f5;
+   color: #333333;
+}
+
+body.light ul li {
+   color: #444444;
+}
+
+body.light section {
+   border-bottom: 1px solid #dddddd;
+}
+
+body.light section h2 {
+   color: #2d45a0;
 }
