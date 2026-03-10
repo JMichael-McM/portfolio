@@ -7,28 +7,45 @@
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
+
+      <!-- HEADER / BANNER -->
       <header>
-         <h1 id="name">John Michael E. Tabacon</h1>
-         <img src="portfolio.png" alt="Profile Picture" id="profile-img">
-         <p id="course-year">IT103L - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
+         <div class="header-content">
+            <h1 id="name">John Michael E. Tabacon</h1>
+            <p id="course-year">IT103L • 2nd Year</p>
+            <button id="theme-toggle">Switch Theme</button>
+         </div>
       </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Completion Certificate for Game Design and Development 2: 2D Platformer</li>
-            <li>Completion Certificate for Foundations of User Experience (UX) Design</li>
-            <li>Completion Certificate for Introduction to User Experience Design</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Game - MathWiz</li>
-            <li>Game - Last One</li>
-            <li>Project 3</li>
-         </ul>
-      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <div class="container">
+         <section id="achievements">
+            <h2>Achievements &amp; Certifications</h2>
+            <ul>
+               <li>Completion Certificate for Game Design and Development 2: 2D Platformer</li>
+               <li>Completion Certificate for Foundations of User Experience (UX) Design</li>
+               <li>Completion Certificate for Introduction to User Experience Design</li>
+            </ul>
+         </section>
+
+         <!-- PROJECTS -->
+         <section id="projects">
+            <h2>Previous Projects</h2>
+            <ul>
+               <li><strong>MathWiz</strong> – Educational Game</li>
+               <li><strong>Last One</strong> – Game Project</li>
+            </ul>
+         </section>
+
+         <!-- COURSE ASSESSMENTS -->
+         <section id="assessments">
+            <h2>Course Assessments</h2>
+            <a href="https://jmichael-mcm.github.io/IT103L_A224_FA2-StrokeSense/" target="_blank">
+               <button class="link-btn">StrokeSense Landing Page</button>
+            </a>
+         </section>
+      </div>
+
       <script src="script.js"></script>
    </body>
 </html>
