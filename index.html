@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>John Michael E. Tabacon Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>John Michael E. Tabacon — Portfolio</title>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- HEADER / BANNER -->
-      <header>
-         <div class="header-content">
-            <h1 id="name">John Michael E. Tabacon</h1>
-            <p id="course-year">IT103L • 2nd Year</p>
-            <button id="theme-toggle">Switch Theme</button>
+   <!-- HERO / BANNER -->
+   <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+         <div class="avatar-wrapper">
+            <img src="portfolio.png" alt="Profile Picture" id="profile-img">
          </div>
-      </header>
+         <h1 id="name">John Michael E. Tabacon</h1>
+         <p id="course-year">IT103L &nbsp;·&nbsp; 2nd Year</p>
+         <button id="theme-toggle">☀ Switch Theme</button>
+      </div>
+      <div class="hero-bottom-fade"></div>
+   </header>
+
+   <!-- MAIN CONTENT -->
+   <main class="container">
 
       <!-- ACHIEVEMENTS -->
-      <div class="container">
-         <section id="achievements">
-            <h2>Achievements &amp; Certifications</h2>
-            <ul>
-               <li>Completion Certificate for Game Design and Development 2: 2D Platformer</li>
-               <li>Completion Certificate for Foundations of User Experience (UX) Design</li>
-               <li>Completion Certificate for Introduction to User Experience Design</li>
-            </ul>
-         </section>
+      <section class="card" id="achievements">
+         <div class="section-label">✦ Achievements</div>
+         <h2>Certifications</h2>
+         <ul>
+            <li>Completion Certificate — Game Design and Development 2: 2D Platformer</li>
+            <li>Completion Certificate — Foundations of User Experience (UX) Design</li>
+            <li>Completion Certificate — Introduction to User Experience Design</li>
+         </ul>
+      </section>
 
-         <!-- PROJECTS -->
-         <section id="projects">
-            <h2>Previous Projects</h2>
-            <ul>
-               <li><strong>MathWiz</strong> – Educational Game</li>
-               <li><strong>Last One</strong> – Game Project</li>
-            </ul>
-         </section>
+      <!-- PROJECTS -->
+      <section class="card" id="projects">
+         <div class="section-label">✦ Work</div>
+         <h2>Previous Projects</h2>
+         <ul class="project-list">
+            <li>
+               <span class="proj-name">MathWiz</span>
+               <span class="proj-type">Educational Game</span>
+            </li>
+            <li>
+               <span class="proj-name">Last One</span>
+               <span class="proj-type">Game Project</span>
+            </li>
+         </ul>
+      </section>
 
-         <!-- COURSE ASSESSMENTS -->
-         <section id="assessments">
-            <h2>Course Assessments</h2>
+      <!-- COURSE ASSESSMENTS -->
+      <section class="card" id="assessments">
+         <div class="section-label">✦ Assessments</div>
+         <h2>Course Activities</h2>
+         <div class="btn-group">
             <a href="https://jmichael-mcm.github.io/IT103L_A224_FA2-StrokeSense/" target="_blank">
-               <button class="link-btn">StrokeSense Landing Page</button>
+               <button class="link-btn">
+                  <span class="btn-icon">✍</span> StrokeSense Landing Page
+               </button>
             </a>
-         </section>
-      </div>
+         </div>
+      </section>
 
-      <script src="script.js"></script>
-   </body>
+   </main>
+
+   <!-- FOOTER -->
+   <footer>
+      <p>© 2025 John Michael E. Tabacon &nbsp;·&nbsp; IT103L Web Programming</p>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
 </html>
